@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.title {
+    color: black; /* Чёрный цвет для заголовка */
+    font-size: 32px; /* Размер шрифта */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+h2 {
+    color: #0077cc;
+}
+
+.wheel-container {
+    position: relative;
+    margin: 20px 0;
+    margin-left: 50px;
+}
+
+#wheel {
+    border: 5px solid #0077cc;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: transform 3s ease-out;
+    width: 300px;
+    height: 300px;
+}
+
+.pointer {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid #8b4513;
+}
+
+.input-container {
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    border: 2px solid #0077cc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0077cc;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+.spin-button {
+    background-color: #ff4444;
+}
+
+.remove-button {
+    background-color: #ff4444;
+}
+
+.clear-button {
+    background-color: #ff8c42;
+}
+
+.presets {
+    margin-top: 20px;
+}
+
+.presets h3 {
+    margin-bottom: 10px;
+}
+
+.preset-button {
+    background-color: #4ECDC4;
+    margin: 5px;
+}
